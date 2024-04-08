@@ -15,5 +15,9 @@ public class A {
         System.out.println("Doing something with return String");
         return "";
     }
+//
+//    void doSomething(String hello) {
+//        System.out.println("Doing something with return String");
+//    }
 
 }

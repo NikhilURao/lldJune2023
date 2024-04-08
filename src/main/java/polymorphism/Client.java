@@ -15,11 +15,29 @@ public class Client {
         }
     }
     public static void main(String[] args) {
-        A a = getSomething();
-        a.age = 21;
-        a.name = "Naman";
+        A a = new A();
+        B b = new B();
+        System.out.println(b.age);
 
-        ((C)a).companyName = "Google"; // ERROR
+        C c = new C();
+
+        A a1 = new B();
+        System.out.println(a1.age);
+        System.out.println(a1.name);
+        // System.out.println(a1.universityName); CE
+
+        //B b1 = new A();
+        // access all properties of parent
+        // access all properties of cur-> subclass
+        B b2 = new B();
+
+        // 1. A parent class object can reference a child object but not the other way round.
+        // 2. Although a parent class can reference a child class object, it can not access the child class's attributes and behaviours
+
+        A a2 = new C();
+
+
 
     }
+
 }

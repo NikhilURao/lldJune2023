@@ -13,7 +13,7 @@ public class Student {
         name = oldStudent.name;
         univName = oldStudent.univName;
         psp = oldStudent.psp;
-        isPlaced = oldStudent.isPlaced;;
+        isPlaced = oldStudent.isPlaced;
     }
 
     public Student(String studentName, String universityName) {
@@ -26,5 +26,9 @@ public class Student {
 
     public Student(String name) {
         System.out.println("I AM A CONSTRUCTOR");
+    }
+
+    public Student() {
+        System.out.println("I AM A No params CONSTRUCTOR");
     }
 }

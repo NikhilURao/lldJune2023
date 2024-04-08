@@ -5,8 +5,13 @@ public class Client {
     public static void main(String[] args) {
         D d = new D();
 
-        A a = new D();
+        // constructor of D will be called
 
-        D d1 = (D) new A();
+        // A a = new D();
+
+        // D d1 = (D) new A();
     }
+
+    // A -> B -> C -> D
+    // A -> B
 }

@@ -3,15 +3,19 @@ package inheritance;
 public class Client {
 
     public static void main(String[] args) {
+        User u = new User();
         Instructor i = new Instructor();
 
-        i.login();
+        u.changePassword(i, "");
 
-        User u = new User();
-        u.login();
+        String instructorUsername = i.username;
+        i.login(); //
+        u.login(); //
 
 //        u.scheduleClass();
 
-        System.out.println(i.username);
+        //System.out.println(i.username);
+
+        NSDCA scaler = new Scaler();
     }
 }

@@ -6,7 +6,15 @@ public class C extends B{
         System.out.println("Constructor of C");
     }
 
-    private C(String a) {
+    C(int a) {
+        System.out.println("Constructor of C with a param");
+    }
+
+    C(double a) {
+        System.out.println("Constructor of C with a param");
+    }
+
+    C(String a) {
         System.out.println("Constructor of C with a param");
     }
 }
